@@ -1,0 +1,48 @@
+doctype html
+/![if IE 8] <html lang="en" class="ie8"
+/![if IE 9] <html lang="en" class="ie9"
+/! [if !IE]><!
+html lang="en" 
+  /! <![endif]
+  head
+    title Doerthe Kosicki - Front End Web Devoloper
+    /! Meta
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    meta content=("Homepage for Doerthe Kosicki - Front End Web Deveoper") name="description" /
+    meta content=("Doerthe Kosicki - Front End Web Deveoper") name="author" /
+    / link href="favicon.ico" rel=("shortcut icon") /
+    link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css" /
+    link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /
+    / /! Global CSS
+    link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" /
+    / /! Plugins CSS
+    link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" /
+    / link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" /
+    link#theme-style href="assets/css/styles.css" rel="stylesheet" /
+    /! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    /![if lt IE 9]
+      | <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script
+      | <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+  body
+		header.header
+		  .container
+		    img.profile-image.img-responsive.pull-left alt=("Doerthe Kosicki") src="assets/images/doerthe.jpg" /
+		    .profile-content.pull-left
+		      h1.name Doerthe Kosicki
+		      h2.desc Web Developer
+		      ul.social.list-inline
+		        li
+		          a href="https://github.com/DOEKO" target="_blank"
+		            i.fa.fa-github
+		        li
+		          a href="http://linkedin.com/in/dörthe-kosicki-855147166" target="_blank"
+		            i.fa.fa-linkedin
+		        li.last-item
+		          a href="https://twitter.com/DortheKosicki" target="_blank"
+		            i.fa.fa-twitter
+		    a.btn.btn-cta-primary.pull-right href="mailto:d.kosicki@web.de" target="_blank"
+		      i.fa.fa-paper-plane
+		      | Contact Me
+  == yield
