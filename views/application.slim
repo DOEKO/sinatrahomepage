@@ -15,12 +15,9 @@ html lang="en"
     link href="favicon.ico" rel="shortcut icon" /
     link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css" /
     link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /
-    / /! Global CSS
     link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" /
-    / /! Plugins CSS
     link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" /
-    / link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" /
-    link#theme-style href="assets/css/styles.css" rel="stylesheet" /
+    link#theme-style href="assets/css/kiki-styles.css" rel="stylesheet" /
     /! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     /![if lt IE 9]
       | <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script
@@ -45,4 +42,18 @@ html lang="en"
 		    a.btn.btn-cta-primary.pull-right href="mailto:kiki@codestun.com" target="_blank"
 		      i.fa.fa-paper-plane
 		      | Contact Me
-  == yield
+  /== yield
+  .container.sections-wrapper
+    .row
+      .primary.col-md-8.col-sm-12.col-xs-12
+        section.about.section
+          .section-inner
+           == yield
+        == slim(:asides_latest_projects)
+        == slim(:asides_work_experience)
+      .secondary.col-md-4.col-sm-12.col-xs-12
+        == slim(:asides_info)
+        == slim(:asides_skills)
+        == slim(:asides_education)
+        == slim(:asides_languages)
+        == slim(:asides_music)
