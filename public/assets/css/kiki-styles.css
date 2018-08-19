@@ -535,6 +535,13 @@ iframe {
   }
 }
 
-.special-css {
+.content > h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: bold;
+}
+
+.content .btn-cta-secondary {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
