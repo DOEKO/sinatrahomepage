@@ -1,2 +1,2 @@
-require './doeko.rb'
+require './app.rb'
 run Sinatra::Application
