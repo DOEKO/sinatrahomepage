@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'sinatra_ssl'
+
+
 
 get '/' do
   slim :index, layout: :application
