@@ -39,7 +39,7 @@ post "/#{ENV['SECRET_PATH']}" do
   )
   if recaptcha_response.body['success']
     Pony.mail({
-      :to => ENV['kiki@codestun.com'],
+      :to => ENV['MAIL_FROM'],
       :from => ENV['MAIL_TO'],
       :"reply_to" => "#{params['name']} <#{params["email"]}>",
       :subject => ENV['MAIL_SUBJECT'],
