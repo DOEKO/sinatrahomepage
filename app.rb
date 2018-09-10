@@ -60,7 +60,3 @@ post "/#{ENV['SECRET_PATH']}" do
     redirect "#{ENV['SITE_ROBOT_PATH']}"
   end
 end
-
-
-
-
