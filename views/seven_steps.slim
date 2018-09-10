@@ -40,6 +40,21 @@ section.about.section
       h4 Step # 7 - Launch!
       p
         | Project wrap-up and fixes: You will be able to see my new changes. 
-
-
         | Please fill in the information below so we can get started, bringing your idea to life! 
+        
+      h3 Please contact me to discuss your project and a free quote.
+
+      <form name="email" action="/#{ENV['SECRET_PATH']}" method="post">
+        p
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" placeholder="Please enter your name">
+        p
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" placeholder="Please enter your email">
+        p
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <div class="g-recaptcha" data-sitekey="6LdFH2wUAAAAADBrhh-bihXGJIxQPAgnkk_gjpOb"></div>
+        p
+          <input type="submit" value="Submit">
+      </form>
