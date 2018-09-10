@@ -27,7 +27,7 @@ get '/thank-you' do
   slim :thank_you, layout: :application
 end
 
-get 'robot' do
+get '/robot' do
   slim :robot, layout: :application
 end
 
