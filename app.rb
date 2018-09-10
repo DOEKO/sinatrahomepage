@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'rubygems'
 require 'bundler/setup'
-require 'dotenv/load'
+require 'dotenv/load' if ENV['RACK_ENV'] == 'production'
 
 
 Bundler.require(:default, ENV['RACK_ENV'] || :development )
