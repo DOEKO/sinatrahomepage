@@ -557,5 +557,9 @@ input[type="text"], input[type="email"], textarea {
   padding-left: 25px;
   padding-right: 25px;
   text-align: left;
-  
+  width: 350px;
+}
+
+.content .label {
+  text-decoration: #5f6b77;
 }
