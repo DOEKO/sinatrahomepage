@@ -16,7 +16,7 @@ before do
 end
 
 get '/' do
-  redirect "http://codestun.com"
+  redirect "https://codestun.com"
 end
 
 get '/' do
