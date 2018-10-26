@@ -5,10 +5,13 @@ require 'dotenv/load' if ENV['RACK_ENV'] == 'development'
 
 Bundler.require(:default, ENV['RACK_ENV'] || :development )
 
-set :force_ssl, (ENV['RACK_ENV'] == 'production')
+configure :production do
+  set :host, 'codestun.herokuapp.com'
+  set :force_ssl, true
+end
 
 before do
-  ssl_whitelist = ['http://codestun.com']
+  ssl_whitelist = []
   if settings.force_ssl && !request.secure? && !ssl_whitelist.include?(request.path_info)
     halt 400, {'Content-Type' => 'text/plain'}, "Please use SSL."
   end
