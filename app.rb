@@ -13,7 +13,7 @@ end
 before do
   ssl_whitelist = []
   if settings.force_ssl && !request.secure? && !ssl_whitelist.include?(request.path_info)
-    halt 400, {'Content-Type' => 'text/plain'}, "Please use SSL."
+    redirect 'https://codestun.com'
   end
 end
 
