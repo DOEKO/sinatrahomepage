@@ -16,10 +16,6 @@ before do
 end
 
 get '/' do
-  redirect "https://codestun.com"
-end
-
-get '/' do
   slim :index, layout: :application
 end
 
