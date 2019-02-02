@@ -7,14 +7,14 @@ Bundler.require(:default, ENV['RACK_ENV'] || :development )
 
 configure :production do
   set :host, 'codestun.herokuapp.com'
-  set :force_ssl, true
+  # set :force_ssl, true
 end
 
 before do
   ssl_whitelist = []
-  if settings.force_ssl && !request.secure? && !ssl_whitelist.include?(request.path_info)
-    redirect 'https://codestun.com'
-  end
+  # if settings.force_ssl && !request.secure? && !ssl_whitelist.include?(request.path_info)
+  #   redirect 'https://codestun.com'
+  # end
 end
 
 get '/' do

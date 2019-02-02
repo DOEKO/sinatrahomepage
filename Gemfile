@@ -10,6 +10,6 @@ gem 'unirest'
 group :development do
   gem 'dotenv'
   gem 'pry'
-  gem 'pry-byebug'
+  # gem 'pry-byebug'
   gem 'shotgun'
 end
